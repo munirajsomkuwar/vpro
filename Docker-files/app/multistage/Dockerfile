@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y git
 RUN apt-get install -y maven
 
 # Clone the repository, checkout 'docker' branch, and build the project
-RUN git clone https://github.com/devopshydclub/vprofile-project.git
+RUN git clone https://github.com/munirajsomkuwar/vpro.git
 RUN cd vprofile-project && git checkout docker && mvn install
 
 FROM tomcat:9-jre11
